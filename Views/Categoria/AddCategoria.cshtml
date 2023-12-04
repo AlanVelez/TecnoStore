@@ -1,0 +1,40 @@
+@using Tecnostore.com.Models.Admin;
+@model Tecnostore.com.Models.Categoria
+@{
+    Layout = "../Admin/_Layout";
+    ViewData["Title"] = "Agregar Categoria";
+    ViewData["ActivePage"] = LayoutAdmin.Categoria;
+}
+
+<form asp-action="AddCategoria" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="tag tag-danger"></div>
+    <div class="table add-product-section">
+            <h5 class="align-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                      <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                                    </svg>
+            Información general</h5>
+            <div class="grid-2">
+                <div class="group-form">
+                    <label for="Nombre">Nombre de la categoría</label>
+                    <input name="Nombre" type="text" class="input max" autocomplete="título" aria-required="true" placeholder="Monitor" />
+                    <span asp-validation-for="Nombre" class="danger"></span>
+                </div>
+                <div class="group-form">
+                    <label for="Etiqueta">Etiqueta</label>
+                    <input name="Etiqueta" type="text" class="input max" autocomplete="etiqueta" aria-required="true" placeholder="Monitor" />
+                    <span asp-validation-for="Etiqueta" class="danger"></span>
+                </div>
+            </div>
+            <div class="group-form">
+                <label asp-for="ImagenFile">Imagen de categoria</label>
+                <input asp-for="ImagenFile" type="file" class="input max" />
+                <span asp-validation-for="ImagenFile" class="danger"></span>
+            </div>
+            <div class="group-form">
+                <label for="Descripcion">Descripción</label>
+                <textarea name="Descripcion" class="textarea" placeholder="Descripción..."></textarea>
+                <span asp-validation-for="Descripcion" class="danger"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-dark max btn-add">Agregar Nueva Categoria</button>
+</form>

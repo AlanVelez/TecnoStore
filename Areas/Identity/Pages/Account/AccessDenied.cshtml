@@ -1,0 +1,16 @@
+﻿@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access Denied";
+}
+
+<header class="access-denied">
+    <div class="access-info">
+        <p class="display-1">403</p>
+        <h1>@ViewData["Title"]</h1>
+        <p class="alert-danger">Lo siento, pero no tienes acceso a este recurso.</p>
+        <a class="btn btn-primary max" asp-area="" asp-controller="Home" asp-action="Index"><ion-icon
+                name="arrow-back-outline"></ion-icon>Regresar a Home</a>
+    </div>
+    <img src="~/img/Error403.svg" alt="">
+</header>

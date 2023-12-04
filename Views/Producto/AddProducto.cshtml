@@ -1,0 +1,95 @@
+@using Tecnostore.com.Models.Admin;
+@model Tecnostore.com.ViewModel.AddProductViewModel
+@{
+    Layout = "../Admin/_Layout";
+    ViewData["Title"] = "Agregar Producto";
+    ViewData["ActivePage"] = LayoutAdmin.Producto;
+}
+
+<form asp-controller="Producto" asp-action="AddProducto" method="post" enctype="multipart/form-data">
+    <div class="add-product">
+        <div class="table add-product-section">
+            <h5 class="align-icon"><ion-icon name="information-circle-outline"></ion-icon>Información general</h5>
+            <div class="grid-2">
+                <div class="group-form">
+                    <label>Título</label>
+                    <input asp-for="Producto.Titulo" class="input max" required autocomplete="título" aria-required="true" placeholder="Monitor" />
+                </div>
+                <div class="group-form">
+                    <label>Categoría</label>
+                    <select asp-for="Producto.IdCategoria" class="input max" required>
+                        @if (Model.Categorias.Count() > 0)
+                        {
+                            @foreach (var item in Model.Categorias)
+                            {
+                                <option value="@item.Id">@item.Nombre</option>
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="group-form">
+                <label>País de origen</label>
+                <select asp-for="Producto.PaisOrigen" class="input max">
+                    <option value="Alemania">Alemania</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Canadá">Canadá</option>
+                    <option value="China">China</option>
+                    <option value="España">España</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Francia">Francia</option>
+                    <option value="India">India</option>
+                    <option value="Italia">Italia</option>
+                    <option value="Japón">Japón</option>
+                    <option value="México">México</option>
+                    <option value="Países Bajos">Países Bajos</option>
+                    <option value="Reino Unido">Reino Unido</option>
+                    <option value="Rusia">Rusia</option>
+                    <option value="Sudáfrica">Sudáfrica</option>
+                    <option value="Suecia">Suecia</option>
+                    <option value="Suiza">Suiza</option>
+                    <option value="Turquía">Turquía</option>
+                    <option value="Tailandia">Tailandia</option>
+                    <option value="Ucrania">Ucrania</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>
+            </div>
+            <div class="group-form">
+                <label>Precio</label>
+                <input asp-for="Producto.Precio" type="number" step="0.01" class="input max" autocomplete="precio" aria-required="true" placeholder="Precio del producto" />
+            </div>
+            <div class="group-form">
+                <label asp-for="ImagenFiles">Imagenes del producto</label>
+                <input asp-for="ImagenFiles" type="file" class="input max" multiple/>
+                <span asp-validation-for="ImagenFiles" class="danger"></span>
+            </div>
+            <div class="group-form">
+                <label>Descripción del producto</label>
+                <textarea asp-for="Producto.Descripcion" class="textarea" placeholder="Descripción breve del producto..."></textarea>
+            </div>
+        </div>
+        <div class="grid-column-2">
+            <div class="table add-product-section">
+                <h5 class="align-icon"><ion-icon name="basket-outline"></ion-icon>Características del producto</h5>
+                <div class="grid-2">
+                    <div class="group-form">
+                        <label>Marca</label>
+                        <input asp-for="Producto.Marca" class="input max" autocomplete="precio" aria-required="true" placeholder="Precio del producto" />
+                    </div>
+                    <div class="group-form">
+                        <label>Color</label>
+                        <input asp-for="Producto.Color" type="color" class="max" autocomplete="precio" aria-required="true" placeholder="Precio del producto" />
+                    </div>
+                </div>
+                <div class="group-form">
+                    <label>Características del producto</label>
+                    <textarea asp-for="Producto.Caracteristicas" class="textarea" placeholder="Características del producto..."></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-dark max btn-add">Agregar Producto</button>
+        </div>
+    </div>
+</form>

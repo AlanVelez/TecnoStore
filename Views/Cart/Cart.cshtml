@@ -1,0 +1,61 @@
+@model List<Articulo>
+@{
+    ViewData["Title"] = "Cart";
+}
+<div class="cart-section">
+    <div class="recibo">
+        <div class="recibo-info">
+            <p class="bold">Resumen del pedido</p>
+            <div class="subtotal-recibo">
+                <p>Total de artículos: <span class="bold"></span></p>
+                <p>Descuento de artículo(s): <span class="bold"></span></p>
+            </div>
+            <div class="total-recibo">
+                <p class="bold">Total estimado( artículos) <span class="bold">$</span></p>
+                <p class="id-producto">Todos los impuestos incluidos</p>
+            </div>
+            @if(Model.Count() == 0){
+                <a class="btn btn-primary-disable max" style="cursor: not-allowed" disabled>Realizar pedido(0)</a>
+            }
+            else{
+                <a href="" class="btn btn-primary max">Realizar pedido()</a>
+            }
+            <p class="id-producto"><ion-icon name="information-circle-outline"></ion-icon>La disponibilidad y el precio de los artículos no están garantizados hasta que se finalice el pago.</p>
+        </div>
+    </div>
+    <div class="articulos">
+        @if (Model.Count() == 0)
+        {
+            <div class="cart-not-found">
+                <p class="display-3 bold"><ion-icon name="cart-outline"></ion-icon>El carrito de compras está vacío</p>
+                <p>Agregar tus artículos favoritos.</p>
+            </div>
+        }
+        else{
+            @foreach (var item in Model){
+                <div class="articulo">
+                    <div class="img-articulo">
+                        <img src="~/img/productos/@item.IdProducto/@item.Imagen" alt="" class="img-cart">
+                    </div>
+                    <div class="articulo-info">
+                        <p class="nombre-articulo bold">@item.Nombre</p>
+                        <p class="precio">$@item.Precio</p>
+                        <div class="articulo-info-2">
+                            <div class="aumentar-carrito">
+                                <a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.IdProducto" class="add-art"><ion-icon name="add-outline"></ion-icon></a>
+                                <p>Cant. <span class="bold">@item.Cantidad</span></p>
+                                <a asp-action="DelToCart" asp-controller="Cart" asp-route-id="@item.IdProducto" class="add-art"><ion-icon name="remove-outline"></ion-icon></a>
+                            </div>
+                            <form asp-action="RemoveFromCart" asp-controller="Cart" method="post">
+                                <input type="hidden" name="id" value="@item.IdProducto" />
+                                <button type="submit" class="delete-button link alert-danger">
+                                    Eliminar todo
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

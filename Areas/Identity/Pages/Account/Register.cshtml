@@ -1,0 +1,69 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Crear cuenta";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<div class="section-login">
+    <p class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="ion-icon">
+            <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd" />
+        </svg>
+        TecnoStore
+    </p>
+    <div class="container-login">
+        <div class="login-area">
+        <p class="display-4">@ViewData["Title"]</p>
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div asp-validation-summary="ModelOnly" class="danger span-text" role="alert"></div>
+            <div class="form-area max">
+                <div class="group-form max">
+                    <label asp-for="Input.Nombre">Nombre</label>
+                    <input asp-for="Input.Nombre" class="input" placeholder="Please choose your first name." />
+                    <span asp-validation-for="Input.Nombre" class="danger span-text"></span>
+                </div>
+                <div class="group-form max">
+                    <label asp-for="Input.Apellido">Apellido</label>
+                    <input asp-for="Input.Apellido" class="input" placeholder="Please choose your last name." />
+                    <span asp-validation-for="Input.Apellido" class="danger span-text"></span>
+                </div>
+            </div>
+            <div class="group-form">
+                <label asp-for="Input.PhoneNumber">Numero de teléfono</label>
+                <input asp-for="Input.PhoneNumber" class="input max" aria-required="true" placeholder="+52 " />
+                <span asp-validation-for="Input.PhoneNumber" class="danger span-text"></span>
+            </div>
+            <div class="group-form">
+                <label asp-for="Input.Email">Correo electrónico</label>
+                <input asp-for="Input.Email" class="input max" autocomplete="username" aria-required="true"
+                    placeholder="name@example.com" />
+                <span asp-validation-for="Input.Email" class="danger span-text"></span>
+            </div>
+            <div class="form-area max">
+                <div class="group-form max">
+                    <label asp-for="Input.Password">Contraseña</label>
+                    <input asp-for="Input.Password" class="input" autocomplete="new-password" aria-required="true"
+                        placeholder="password" />
+                </div>
+                <div class="group-form max">
+                    <label asp-for="Input.ConfirmPassword">Confirmar contraseña</label>
+                    <input asp-for="Input.ConfirmPassword" class="input" autocomplete="new-password"
+                        aria-required="true" placeholder="password" />
+                </div>
+            </div>
+            <span asp-validation-for="Input.Password" class="danger span-text"></span>
+            <span asp-validation-for="Input.ConfirmPassword" class="danger span-text"></span>
+            <div class="group-form">
+                <p>Al continuar, aceptas los <a href="/Home/Terminos" class="link">Términos y condiciones</a> y la <a href="/Home/Privacy" class="link">Política de privacidad</a> de TecnoStore.</p>
+            </div>
+            <button id="registerSubmit" type="submit" class="btn btn-primary max">Registrarme</button>
+        </form>
+    </div>
+    <div class="sing-up-area">
+        <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" class="btn btn-secondary max">Iniciar sesión</a>
+    </div>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

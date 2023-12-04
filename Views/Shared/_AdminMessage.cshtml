@@ -1,0 +1,10 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<Usuario> SignInManager
+@inject UserManager<Usuario> UserManager
+
+@if (User.IsInRole("Admin"))
+{
+    <div class="tag tag-attention tag-admin">
+        <p><ion-icon name="alert-circle-outline"></ion-icon>Has accedido con privilegios de administrador.</p>
+    </div>
+}

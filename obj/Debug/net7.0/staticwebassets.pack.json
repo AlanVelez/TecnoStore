@@ -1,0 +1,545 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Tecnostore.com.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Tecnostore.com.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\css\\normalize.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\Error403.svg",
+      "PackagePath": "staticwebassets\\img\\Error403.svg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\Error404.svg",
+      "PackagePath": "staticwebassets\\img\\Error404.svg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\Isotipo.svg",
+      "PackagePath": "staticwebassets\\img\\Isotipo.svg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\LogoMenu.svg",
+      "PackagePath": "staticwebassets\\img\\LogoMenu.svg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\banner.jpg",
+      "PackagePath": "staticwebassets\\img\\banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\banner2.jpg",
+      "PackagePath": "staticwebassets\\img\\banner2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\banner3.jpg",
+      "PackagePath": "staticwebassets\\img\\banner3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\categorias\\0768491a-f483-43e1-929c-0398b9e4d204.webp",
+      "PackagePath": "staticwebassets\\img\\categorias\\0768491a-f483-43e1-929c-0398b9e4d204.webp"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\categorias\\0f9ee5ec-4a7e-40bf-987d-268906110283.webp",
+      "PackagePath": "staticwebassets\\img\\categorias\\0f9ee5ec-4a7e-40bf-987d-268906110283.webp"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\categorias\\2358c7e4-761d-4373-9567-61a1e64e5b15.webp",
+      "PackagePath": "staticwebassets\\img\\categorias\\2358c7e4-761d-4373-9567-61a1e64e5b15.webp"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\categorias\\631b0595-0a6d-42a0-a467-d29d5b0bf114.webp",
+      "PackagePath": "staticwebassets\\img\\categorias\\631b0595-0a6d-42a0-a467-d29d5b0bf114.webp"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\categorias\\95cd39d0-3cfd-40ad-b06e-975f5e3c9588.webp",
+      "PackagePath": "staticwebassets\\img\\categorias\\95cd39d0-3cfd-40ad-b06e-975f5e3c9588.webp"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\categorias\\fb95855c-8dbd-4164-b6eb-8c1acdfbf434.png",
+      "PackagePath": "staticwebassets\\img\\categorias\\fb95855c-8dbd-4164-b6eb-8c1acdfbf434.png"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\1f1f5680-1e36-4870-a679-114c614aadb5\\82df657a-0795-4a74-afbc-c68774510bf3.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\1f1f5680-1e36-4870-a679-114c614aadb5\\82df657a-0795-4a74-afbc-c68774510bf3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\1f1f5680-1e36-4870-a679-114c614aadb5\\f53cac0f-de87-4b38-8cc8-13ca4e82a8bb.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\1f1f5680-1e36-4870-a679-114c614aadb5\\f53cac0f-de87-4b38-8cc8-13ca4e82a8bb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\2595a0da-cf23-415d-b912-00da92a202a6\\0c3be790-8054-4cb6-b13c-bddc01cd30c0.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\2595a0da-cf23-415d-b912-00da92a202a6\\0c3be790-8054-4cb6-b13c-bddc01cd30c0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\2595a0da-cf23-415d-b912-00da92a202a6\\997e171a-d7b8-4363-a593-1dcc1e50d7b9.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\2595a0da-cf23-415d-b912-00da92a202a6\\997e171a-d7b8-4363-a593-1dcc1e50d7b9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\2595a0da-cf23-415d-b912-00da92a202a6\\d11350b7-01ee-465b-8c08-35f3c55113c3.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\2595a0da-cf23-415d-b912-00da92a202a6\\d11350b7-01ee-465b-8c08-35f3c55113c3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\27b7fff3-d49a-42d3-803a-9a8c17920125\\57ccd273-39e8-4690-b6d1-654f3899c43a.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\27b7fff3-d49a-42d3-803a-9a8c17920125\\57ccd273-39e8-4690-b6d1-654f3899c43a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\27b7fff3-d49a-42d3-803a-9a8c17920125\\83d47036-411a-4e4b-b525-81dcfc2f0f93.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\27b7fff3-d49a-42d3-803a-9a8c17920125\\83d47036-411a-4e4b-b525-81dcfc2f0f93.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\27b7fff3-d49a-42d3-803a-9a8c17920125\\905bfe6f-487a-40b8-8fc2-4ef1ea38c35d.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\27b7fff3-d49a-42d3-803a-9a8c17920125\\905bfe6f-487a-40b8-8fc2-4ef1ea38c35d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\2e20b76d-d7d2-4c02-babd-a883bf9202ce\\3e6b1d40-6b86-43f5-b9bc-1ebd06732c2f.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\2e20b76d-d7d2-4c02-babd-a883bf9202ce\\3e6b1d40-6b86-43f5-b9bc-1ebd06732c2f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\2e20b76d-d7d2-4c02-babd-a883bf9202ce\\6822dd79-e950-4a54-aedf-5d298597ac93.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\2e20b76d-d7d2-4c02-babd-a883bf9202ce\\6822dd79-e950-4a54-aedf-5d298597ac93.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\2e20b76d-d7d2-4c02-babd-a883bf9202ce\\7f14ef2a-9830-4e6f-a21d-1c6888df987d.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\2e20b76d-d7d2-4c02-babd-a883bf9202ce\\7f14ef2a-9830-4e6f-a21d-1c6888df987d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\38047c4c-069e-4ac6-8eb7-ba5ae054826d\\1be8362a-2e90-4dba-aef9-fd6bb2e07f97.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\38047c4c-069e-4ac6-8eb7-ba5ae054826d\\1be8362a-2e90-4dba-aef9-fd6bb2e07f97.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\38047c4c-069e-4ac6-8eb7-ba5ae054826d\\24e316ed-8bc1-46ce-9eb4-c3ee5c8ee0d7.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\38047c4c-069e-4ac6-8eb7-ba5ae054826d\\24e316ed-8bc1-46ce-9eb4-c3ee5c8ee0d7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\38047c4c-069e-4ac6-8eb7-ba5ae054826d\\b64137bd-5600-4d49-99d3-03c364ff865e.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\38047c4c-069e-4ac6-8eb7-ba5ae054826d\\b64137bd-5600-4d49-99d3-03c364ff865e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\3af0ae2c-217b-4130-a293-4a4164c17668\\4dd7fe39-7955-4732-ade4-ae3fad05e3c3.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\3af0ae2c-217b-4130-a293-4a4164c17668\\4dd7fe39-7955-4732-ade4-ae3fad05e3c3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\3af0ae2c-217b-4130-a293-4a4164c17668\\9de88032-3871-442c-a7c9-24c6b1a8a2b7.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\3af0ae2c-217b-4130-a293-4a4164c17668\\9de88032-3871-442c-a7c9-24c6b1a8a2b7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\40858a0c-a4dc-4eb1-9882-de216c6be276\\bb107523-81ad-484d-86ed-44c7cb3e573a.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\40858a0c-a4dc-4eb1-9882-de216c6be276\\bb107523-81ad-484d-86ed-44c7cb3e573a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\5638475b-6a4b-4661-9b7c-66d97c8f59e8\\69172211-a89a-460b-8925-334aebc2c293.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\5638475b-6a4b-4661-9b7c-66d97c8f59e8\\69172211-a89a-460b-8925-334aebc2c293.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\5638475b-6a4b-4661-9b7c-66d97c8f59e8\\80c4984c-1ebf-40cc-abe7-a84fce4e9d28.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\5638475b-6a4b-4661-9b7c-66d97c8f59e8\\80c4984c-1ebf-40cc-abe7-a84fce4e9d28.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\5638475b-6a4b-4661-9b7c-66d97c8f59e8\\85ed4268-3cfb-4d26-86d2-b285257acdfe.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\5638475b-6a4b-4661-9b7c-66d97c8f59e8\\85ed4268-3cfb-4d26-86d2-b285257acdfe.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\61365ccc-ed28-4205-a6d0-d131578a67ba\\ab7c109d-bd13-4058-9116-8e650c4a49bc.jpeg",
+      "PackagePath": "staticwebassets\\img\\productos\\61365ccc-ed28-4205-a6d0-d131578a67ba\\ab7c109d-bd13-4058-9116-8e650c4a49bc.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\61365ccc-ed28-4205-a6d0-d131578a67ba\\e9c9b917-69cb-4d19-8b0e-5d842fc191bc.jpeg",
+      "PackagePath": "staticwebassets\\img\\productos\\61365ccc-ed28-4205-a6d0-d131578a67ba\\e9c9b917-69cb-4d19-8b0e-5d842fc191bc.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\61365ccc-ed28-4205-a6d0-d131578a67ba\\f3ac60c7-8f16-48a1-9f5c-d36adca5d731.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\61365ccc-ed28-4205-a6d0-d131578a67ba\\f3ac60c7-8f16-48a1-9f5c-d36adca5d731.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\75ce6b8d-0b3b-458d-8864-458297813425\\14e3a13a-ec3c-4714-ac65-cbdd1b926753.webp",
+      "PackagePath": "staticwebassets\\img\\productos\\75ce6b8d-0b3b-458d-8864-458297813425\\14e3a13a-ec3c-4714-ac65-cbdd1b926753.webp"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\75ce6b8d-0b3b-458d-8864-458297813425\\4e2466d8-c5d9-4673-81f7-3f5b2c855fee.png",
+      "PackagePath": "staticwebassets\\img\\productos\\75ce6b8d-0b3b-458d-8864-458297813425\\4e2466d8-c5d9-4673-81f7-3f5b2c855fee.png"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\75ce6b8d-0b3b-458d-8864-458297813425\\da3f8766-4846-4026-bb42-877d72987ac3.webp",
+      "PackagePath": "staticwebassets\\img\\productos\\75ce6b8d-0b3b-458d-8864-458297813425\\da3f8766-4846-4026-bb42-877d72987ac3.webp"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\7f7a5b34-57b5-4034-9279-70a0b46718b2\\132dc603-99ff-43fe-94f6-d96ed360bbec.jpeg",
+      "PackagePath": "staticwebassets\\img\\productos\\7f7a5b34-57b5-4034-9279-70a0b46718b2\\132dc603-99ff-43fe-94f6-d96ed360bbec.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\7f7a5b34-57b5-4034-9279-70a0b46718b2\\480b579b-c226-4416-a560-6ca277b9c594.jpeg",
+      "PackagePath": "staticwebassets\\img\\productos\\7f7a5b34-57b5-4034-9279-70a0b46718b2\\480b579b-c226-4416-a560-6ca277b9c594.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\7f7a5b34-57b5-4034-9279-70a0b46718b2\\5ae1810f-35a8-41cf-bb81-69d51009f305.jpeg",
+      "PackagePath": "staticwebassets\\img\\productos\\7f7a5b34-57b5-4034-9279-70a0b46718b2\\5ae1810f-35a8-41cf-bb81-69d51009f305.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\8f5066f3-e6ba-49ae-b41c-559c0413464c\\3427af06-6752-4961-b3df-576eb9b781f5.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\8f5066f3-e6ba-49ae-b41c-559c0413464c\\3427af06-6752-4961-b3df-576eb9b781f5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\8f5066f3-e6ba-49ae-b41c-559c0413464c\\bf85ad25-845e-4aae-94b1-fea55ccf69da.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\8f5066f3-e6ba-49ae-b41c-559c0413464c\\bf85ad25-845e-4aae-94b1-fea55ccf69da.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\8f5066f3-e6ba-49ae-b41c-559c0413464c\\f10cb92e-3f7a-423a-8ce4-bcc40d14e56a.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\8f5066f3-e6ba-49ae-b41c-559c0413464c\\f10cb92e-3f7a-423a-8ce4-bcc40d14e56a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\9e7d513d-5a7d-4f86-b53c-e1777a0297e7\\491bfef8-9cd3-421d-a880-d26546359013.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\9e7d513d-5a7d-4f86-b53c-e1777a0297e7\\491bfef8-9cd3-421d-a880-d26546359013.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\9e7d513d-5a7d-4f86-b53c-e1777a0297e7\\95dcfc28-990b-48ca-a330-9a406bb2b4a5.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\9e7d513d-5a7d-4f86-b53c-e1777a0297e7\\95dcfc28-990b-48ca-a330-9a406bb2b4a5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\9e7d513d-5a7d-4f86-b53c-e1777a0297e7\\ca91c744-203f-47b5-ae04-09f1f4521a2c.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\9e7d513d-5a7d-4f86-b53c-e1777a0297e7\\ca91c744-203f-47b5-ae04-09f1f4521a2c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\a9fadd51-a55a-4ada-9b8a-d9783abb2f79\\7d6fdcc0-255b-426c-8a6a-cdcd64c2880f.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\a9fadd51-a55a-4ada-9b8a-d9783abb2f79\\7d6fdcc0-255b-426c-8a6a-cdcd64c2880f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\a9fadd51-a55a-4ada-9b8a-d9783abb2f79\\e89391ce-29d0-4b8e-8381-4154d5cc6612.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\a9fadd51-a55a-4ada-9b8a-d9783abb2f79\\e89391ce-29d0-4b8e-8381-4154d5cc6612.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\b05582fa-e66a-4aef-8829-b758c7595199\\57eb18b5-54ad-4b38-87e0-27b077c9b749.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\b05582fa-e66a-4aef-8829-b758c7595199\\57eb18b5-54ad-4b38-87e0-27b077c9b749.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\b05582fa-e66a-4aef-8829-b758c7595199\\b2dbca51-ff99-4459-ac8b-10ff7020a0a7.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\b05582fa-e66a-4aef-8829-b758c7595199\\b2dbca51-ff99-4459-ac8b-10ff7020a0a7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\b05582fa-e66a-4aef-8829-b758c7595199\\f666aecb-647c-48d3-9a7c-bcbe360a63a1.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\b05582fa-e66a-4aef-8829-b758c7595199\\f666aecb-647c-48d3-9a7c-bcbe360a63a1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\b10390b7-9678-4de9-b604-5a2dc4907741\\b5a763ab-2674-4f22-b5f5-8198eddae13f.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\b10390b7-9678-4de9-b604-5a2dc4907741\\b5a763ab-2674-4f22-b5f5-8198eddae13f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\b10390b7-9678-4de9-b604-5a2dc4907741\\bf6ab7e0-f5bd-4e2c-b0ed-04f7312f1e5b.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\b10390b7-9678-4de9-b604-5a2dc4907741\\bf6ab7e0-f5bd-4e2c-b0ed-04f7312f1e5b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\b10390b7-9678-4de9-b604-5a2dc4907741\\cc468852-db8b-4b5c-bfee-e89100abedc3.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\b10390b7-9678-4de9-b604-5a2dc4907741\\cc468852-db8b-4b5c-bfee-e89100abedc3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\c5ac6eda-b8e4-4002-b747-74f5715c8462\\d066b7bf-24a4-47b3-a827-606f2eb0010e.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\c5ac6eda-b8e4-4002-b747-74f5715c8462\\d066b7bf-24a4-47b3-a827-606f2eb0010e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\ce4bfdab-2871-44b7-8380-0068df6a3b7c\\2141e2fb-f415-4506-b537-628b0ddcd2bf.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\ce4bfdab-2871-44b7-8380-0068df6a3b7c\\2141e2fb-f415-4506-b537-628b0ddcd2bf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\ce4bfdab-2871-44b7-8380-0068df6a3b7c\\a4612222-dd6e-4798-9786-15d015178de0.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\ce4bfdab-2871-44b7-8380-0068df6a3b7c\\a4612222-dd6e-4798-9786-15d015178de0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\ce4bfdab-2871-44b7-8380-0068df6a3b7c\\a600004c-131f-4acc-96d3-a86ce4cbd77c.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\ce4bfdab-2871-44b7-8380-0068df6a3b7c\\a600004c-131f-4acc-96d3-a86ce4cbd77c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\d26b1e0d-bc48-46c5-a133-4ad205e6a942\\11b66565-5074-430d-a2ac-022f1c93ce72.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\d26b1e0d-bc48-46c5-a133-4ad205e6a942\\11b66565-5074-430d-a2ac-022f1c93ce72.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\d26b1e0d-bc48-46c5-a133-4ad205e6a942\\c89977bd-0d52-4c45-b009-88bffad82e0b.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\d26b1e0d-bc48-46c5-a133-4ad205e6a942\\c89977bd-0d52-4c45-b009-88bffad82e0b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\d26b1e0d-bc48-46c5-a133-4ad205e6a942\\e74c0785-7de9-4c30-9186-5ef82822b48e.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\d26b1e0d-bc48-46c5-a133-4ad205e6a942\\e74c0785-7de9-4c30-9186-5ef82822b48e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\d7e4fbde-85e4-414e-ace8-b83dcc3f74c2\\55b4750f-16bc-4988-a1c0-2f5c3c3ee00a.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\d7e4fbde-85e4-414e-ace8-b83dcc3f74c2\\55b4750f-16bc-4988-a1c0-2f5c3c3ee00a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\d7e4fbde-85e4-414e-ace8-b83dcc3f74c2\\ba74ddfc-a81a-4826-bde0-8be553d7acff.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\d7e4fbde-85e4-414e-ace8-b83dcc3f74c2\\ba74ddfc-a81a-4826-bde0-8be553d7acff.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\d7e4fbde-85e4-414e-ace8-b83dcc3f74c2\\fcb4a569-89ac-4517-ac51-513f5ae0f678.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\d7e4fbde-85e4-414e-ace8-b83dcc3f74c2\\fcb4a569-89ac-4517-ac51-513f5ae0f678.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\e37eb9ff-7b42-44c7-8fe5-8f337ea94330\\3b0ffd53-f668-403e-8888-0e1da6c44566.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\e37eb9ff-7b42-44c7-8fe5-8f337ea94330\\3b0ffd53-f668-403e-8888-0e1da6c44566.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\e37eb9ff-7b42-44c7-8fe5-8f337ea94330\\5fc8e967-c8e7-4fe2-8148-d87826cc0f8a.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\e37eb9ff-7b42-44c7-8fe5-8f337ea94330\\5fc8e967-c8e7-4fe2-8148-d87826cc0f8a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\img\\productos\\e37eb9ff-7b42-44c7-8fe5-8f337ea94330\\7db1bc75-5708-44a9-bb24-3cd25f9c41cb.jpg",
+      "PackagePath": "staticwebassets\\img\\productos\\e37eb9ff-7b42-44c7-8fe5-8f337ea94330\\7db1bc75-5708-44a9-bb24-3cd25f9c41cb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\alanf\\Desktop\\Tecnostore.com\\Tecnostore.com\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Tecnostore.com.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Tecnostore.com.props",
+      "PackagePath": "build\\Tecnostore.com.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Tecnostore.com.props",
+      "PackagePath": "buildMultiTargeting\\Tecnostore.com.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Tecnostore.com.props",
+      "PackagePath": "buildTransitive\\Tecnostore.com.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

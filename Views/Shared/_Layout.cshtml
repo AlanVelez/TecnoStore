@@ -1,0 +1,188 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Tecnostore.com.Models;
+@using Microsoft.AspNetCore.Http;
+@inject SignInManager<Usuario> SignInManager
+@inject UserManager<Usuario> UserManager
+@using Tecnostore.com.Extensions 
+@{
+    var cartItems = Context.Session.Get<List<Articulo>>("cart") ?? new List<Articulo>();
+}
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Tecnostore.com</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/normalize.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Tecnostore.com.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="bg-black bg-active"></div>
+    <div class="bg-black bg-active-cart"></div>
+    <div class="cart-menu menu-close-cart">
+        <div class="header-cart">
+            <div class="info-cart">
+                <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                      <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                    </svg>
+                        Carrito de compras
+                </h1>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="ion-icon icon-cart">
+              <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="cart-items">
+            @if(cartItems != null && cartItems.Any()){
+                @foreach(var item in cartItems){
+                    <div class="cart-item">
+                        <img src="~/img/productos/@item.IdProducto/@item.Imagen" alt="">
+                        <p class="titulo-cart-item">@item.Nombre</p>
+                        <p class="precio bold">$@item.Precio</p>
+                        <p class="cantidad">Cant. <span class="bold">@item.Cantidad</span></p>
+                        <form asp-action="RemoveFromCart" asp-controller="Cart" method="post">
+                            <input type="hidden" name="id" value="@item.IdProducto" />
+                            <button type="submit" class="delete-button link alert-danger">
+                                Eliminar
+                            </button>
+                        </form>
+                    </div>
+                }
+            }
+            else{
+                <div class="cart-not-found">
+                    <p class="display-3 bold"><ion-icon name="cart-outline"></ion-icon>El carrito de compras está vacío</p>
+                    <p>Agregar tus artículos favoritos.</p>
+                </div>
+            }
+        </div>
+        <div class="footer-cart">
+            <a asp-action="Cart" asp-controller="Cart" class="btn btn-primary max">Ir al carrito</a>
+        </div>
+    </div>
+    <div class="hamburger-menu menu-close">
+        <div class="close-menu">
+            <p class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                              <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd" />
+                            </svg>TecnoStore</p>
+            <ion-icon name="close-outline" class="icon-menu"></ion-icon>
+        </div>
+        <form asp-action="ViewCategoria" asp-controller="Home" method="get">
+            <div class="search-bar">
+                <input class="search" name="searchFiltro" placeholder="Buscar producto...">
+                <button type="submit">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+        </form>
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="configuration-area">
+                <h4>Administrador</h4>
+                <a asp-area="" asp-controller="Admin" asp-action="Index"><ion-icon
+                        name="bar-chart-outline"></ion-icon>Dashboard</a>
+            </div>
+        }
+        <div class="configuration-area">
+            <h4>Ayuda y Configuración</h4>
+            <a asp-area="" asp-controller="Home" asp-action="Index"><ion-icon name="home-outline"></ion-icon>Home</a>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy"><ion-icon
+                    name="shield-outline"></ion-icon>Política de privacidad</a>
+            <a><ion-icon name="chatbubbles-outline"></ion-icon>Servicio al cliente</a>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
+                    asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button type="submit" class="btn btn-primary max">Cerrar sesión</button>
+                </form>
+            }
+            else
+            {
+                <a asp-area="Identity" asp-page="/Account/Login"><ion-icon name="log-in-outline"></ion-icon>Iniciar
+                    sesión</a>
+                <a asp-area="Identity" asp-page="/Account/Register"><ion-icon
+                        name="person-add-outline"></ion-icon>Registrarme</a>
+            }
+        </div>
+    </div>
+    <div class="body">
+        <header class="layout-main-menu">
+            <nav class="main-menu">
+                <div class="secondary-menu">
+                    <ion-icon name="menu-outline" class="icon-menu"></ion-icon>
+                    <a asp-action="Index" asp-controller="Home">
+                        <p class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                              <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd" />
+                            </svg>TecnoStore</p>
+                    </a>
+                </div>
+                <form asp-action="ViewCategoria" asp-controller="Home" method="get" class="search-bar">
+                    <input class="search" name="searchFiltro" placeholder="Buscar producto...">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="ion-icon">
+                          <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="user-area">
+                    @if (!User.IsInRole("Admin"))
+                    {
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="ion-icon icon-cart">
+                            <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                        </svg>
+                    }
+
+                    <partial name="_LoginPartial" />
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <div class="footer-section">
+            <div class="column-footer logo-section">
+                <p class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd" />
+                </svg>TecnoStore</p>
+            </div>   
+            <div class="column-footer">
+                <h3>TecnoStore</h3>
+                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </div>   
+            <div class="column-footer">
+                <h3>Atención al cliente</h3>
+                <a><ion-icon name="chatbubbles-outline"></ion-icon>Servicio al cliente</a>
+            </div>   
+            <div class="column-footer">
+                <h3>Contáctenos</h3>
+                <a><ion-icon name="logo-facebook"></ion-icon>Facebook</a>
+                <a><ion-icon name="logo-twitter"></ion-icon>Twitter</a>
+                <a><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
+            </div>   
+        </div>
+        <div class="footer-section">
+            <div class="column-footer">
+                <p>© @DateTime.Now.Year Tecnostore.com</p>
+            </div>   
+            <div class="column-footer">
+                <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de privacidad</a>
+            </div>   
+            <div class="column-footer">
+                <a asp-area="" asp-controller="Home" asp-action="Terminos">Términos y condiciones</a>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script> 
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

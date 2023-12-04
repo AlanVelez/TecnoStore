@@ -1,0 +1,47 @@
+@using Tecnostore.com.Models.Admin;
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Ordenes";
+    ViewData["ActivePage"] = LayoutAdmin.Orden;
+}
+<div class="table-overflow-x">
+    <table class="table-father">
+        <thead>
+            <tr>
+                <th>Num. Orden</th>
+                <th>Cliente</th>
+                <th>Metodo de pago</th>
+                <th>Status</th>
+                <th>Monto</th>
+                <th>Fecha de creación</th>
+                <th>Acciones</th>
+            </tr>   
+        </thead>
+        <tbody>
+            <tr>
+                <td>123</td>
+                <td>Monitor 14"</td>
+                <td>Monitores</td>
+                <td>$2500.00</td>
+                <td>$2500.00</td>
+                <td>2023-08-16</td>
+                <td>
+                    <a><ion-icon name="create-outline"></ion-icon></a>
+                    <a><ion-icon name="trash-outline"></ion-icon></a>
+                </td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>Monitor 14"</td>
+                <td>Monitores</td>
+                <td>$2500.00</td>
+                <td>$2500.00</td>
+                <td>2023-08-16</td>
+                <td>
+                    <a><ion-icon name="create-outline"></ion-icon></a>
+                    <a><ion-icon name="trash-outline"></ion-icon></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,29 @@
+﻿@inject SignInManager<Usuario> SignInManager
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+<div class="menu-manage">
+    <a class="link @ManageNavPages.IndexNavClass(ViewContext)" id="profile" asp-page="./Index"><ion-icon
+            name="person-outline" class="@ManageNavPages.IndexNavClass(ViewContext)"></ion-icon>Mi Cuenta</a>
+    <a class="link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email"><ion-icon
+            name="mail-outline" class="@ManageNavPages.EmailNavClass(ViewContext)"></ion-icon>Correo electrónico</a>
+    <a class="link @ManageNavPages.ChangePasswordNavClass(ViewContext)" id="change-password"
+        asp-page="./ChangePassword"><ion-icon name="key-outline"
+            class="@ManageNavPages.ChangePasswordNavClass(ViewContext)"></ion-icon>Cambiar contraseña</a>
+    @if (hasExternalLogins)
+    {
+        <div id="external-logins" class="link"><a id="external-login"
+                class="@ManageNavPages.ExternalLoginsNavClass(ViewContext)" asp-page="./ExternalLogins"><ion-icon
+                    name="log-in-outline" class="@ManageNavPages.ExternalLoginsNavClass(ViewContext)"></ion-icon>Inicios de
+                sesión
+                externos</a></div>
+    }
+    <a class="link @ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)" id="two-factor"
+        asp-page="./TwoFactorAuthentication"><ion-icon name="lock-closed-outline"
+            class="@ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)"></ion-icon>Two-factor
+        authentication</a>
+    <a class="link @ManageNavPages.PersonalDataNavClass(ViewContext)" id="personal-data"
+        asp-page="./PersonalData"><ion-icon name="download-outline"
+            class="@ManageNavPages.PersonalDataNavClass(ViewContext)"></ion-icon>Datos
+        Personales</a>
+</div>

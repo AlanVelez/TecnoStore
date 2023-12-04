@@ -1,0 +1,41 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout != null)
+    {
+        Layout = parentLayout.ToString();
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+}
+
+<div class="section-manage">
+    <div class="section-account ">
+        <div class="menu-account">
+            <partial name="_ManageNav" />
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
+                asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button type="submit" class="btn btn-primary max">Cerrar sesión</button>
+            </form>
+        </div>
+        <div class="menu-manage-collapse">
+            <button class="btn btn-primary btn-collapse max">
+                <ion-icon name="grid-outline"></ion-icon>Menu
+            </button>
+            <div class="collapse-hidden collapse max">
+                <partial name="_ManageNav" />
+                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
+                    asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button type="submit" class="btn btn-primary max">Cerrar sesión</button>
+                </form>
+            </div>
+        </div>
+        <div class="info-account">
+            @RenderBody()
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}

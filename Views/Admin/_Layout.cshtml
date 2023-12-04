@@ -1,0 +1,147 @@
+@using Tecnostore.com.Models.Admin;
+@{
+    var Title = ViewData["Title"] as string;
+}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Tecnostore.com</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/normalize.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Tecnostore.com.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="bg-black bg-active"></div>
+    <div class="admin-layout">
+        <div class="hamburger-menu menu-close">
+            <div class="close-menu">
+                <p class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd" />
+                </svg>TecnoStore <span class="tag tag-primary">Admin</span></p>
+                <ion-icon name="close-outline" class="icon-menu"></ion-icon>
+            </div>
+            <div class="search-bar">
+                <input class="search" placeholder="Buscar...">
+                <button>
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="configuration-area">
+                <div class="admin-group">
+                    <a asp-action="Index" asp-controller="Admin" class="@LayoutAdmin.IndexClass(ViewContext)"><ion-icon
+                            name="clipboard-outline"></ion-icon>Dashboard</a>
+                </div>
+                <div class="admin-group">
+                    <h4>Configuración de tienda</h4>
+                    <a asp-action="Productos" asp-controller="Admin"
+                        class="@LayoutAdmin.ProductoClass(ViewContext)"><ion-icon
+                            name="cart-outline"></ion-icon>Productos</a>
+                    <a asp-action="Categorias" asp-controller="Admin"
+                        class="@LayoutAdmin.CategoriaClass(ViewContext)"><ion-icon
+                            name="list-outline"></ion-icon>Categorias</a>
+                    <a asp-action="Ordenes" asp-controller="Admin"
+                        class="@LayoutAdmin.OrdenClass(ViewContext)"><ion-icon name="bag-outline"></ion-icon>Ordenes</a>
+                    <a asp-action="Usuarios" asp-controller="Admin"
+                        class="@LayoutAdmin.UsuarioClass(ViewContext)"><ion-icon
+                            name="people-outline"></ion-icon>Usuarios</a>
+                    <a asp-action="Reviews" asp-controller="Admin"
+                        class="@LayoutAdmin.ReviewClass(ViewContext)"><ion-icon
+                            name="star-outline"></ion-icon>Reviews</a>
+                </div>
+                <form class="max" asp-area="Identity" asp-page="/Account/Logout"
+                    asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                    <button type="submit" class="btn btn-danger max">Cerrar sesión</button>
+                </form>
+            </div>
+            <div class="bg-black">
+            </div>
+        </div>
+        <header>
+            <div class="back-home">
+                <a asp-controller="Home" asp-action="Index">
+                    <p class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd" />
+                    </svg>TecnoStore</p>
+                </a>
+                <span class="tag tag-primary">Admin</span>
+            </div>
+            <div class="menu-admin">
+                <div class="admin-group">
+                    <a asp-action="Index" asp-controller="Admin" class="@LayoutAdmin.IndexClass(ViewContext)"><ion-icon
+                            name="clipboard-outline"></ion-icon>Dashboard</a>
+                </div>
+                <div class="admin-group">
+                    <h4>Configuración de tienda</h4>
+                    <a asp-action="Productos" asp-controller="Admin"
+                        class="@LayoutAdmin.ProductoClass(ViewContext)"><ion-icon
+                            name="cart-outline"></ion-icon>Productos</a>
+                    <a asp-action="Categorias" asp-controller="Admin"
+                        class="@LayoutAdmin.CategoriaClass(ViewContext)"><ion-icon
+                            name="list-outline"></ion-icon>Categorias</a>
+                    <a asp-action="Ordenes" asp-controller="Admin"
+                        class="@LayoutAdmin.OrdenClass(ViewContext)"><ion-icon name="bag-outline"></ion-icon>Ordenes</a>
+                    <a asp-action="Usuarios" asp-controller="Admin"
+                        class="@LayoutAdmin.UsuarioClass(ViewContext)"><ion-icon
+                            name="people-outline"></ion-icon>Usuarios</a>
+                    <a asp-action="Reviews" asp-controller="Admin"
+                        class="@LayoutAdmin.ReviewClass(ViewContext)"><ion-icon
+                            name="star-outline"></ion-icon>Reviews</a>
+                    <form class="max" asp-area="Identity" asp-page="/Account/Logout"
+                        asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <button type="submit" class="btn btn-danger max">Cerrar sesión</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main class="tag-middle-white">
+            <nav class="main-menu px-4">
+                <div class="secondary-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="ion-icon icon-menu">
+                      <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="search-bar">
+                    <input class="search" placeholder="Buscar...">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="ion-icon">
+                          <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5z" clip-rule="evenodd" />
+                        </svg>
+
+                    </button>
+                </div>
+                <div class="user-area">
+                    <partial name="_LoginPartial" />
+                </div>
+            </nav>
+            <div class="header-layout px-4">
+                <h1>@ViewData["Title"]</h1>
+                @if (Title == "Productos")
+                {
+                    <a asp-action="addProducto" asp-controller="Producto" class="btn btn-dark">Agregar
+                        Producto</a>
+                }
+                @if (Title == "Categorias")
+                {
+                    <a asp-action="addCategoria" asp-controller="Categoria" class="btn btn-dark">Agregar Categoria</a>
+                }
+            </div>
+            <div class="px-4">
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

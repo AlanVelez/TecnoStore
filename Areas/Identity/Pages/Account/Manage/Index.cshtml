@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Mi cuenta";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+@*Vista de cambio del perfil*@
+
+<h3>@ViewData["Title"]</h3>
+<h4>Detalles de la cuenta</h4>
+<partial name="_StatusMessage" for="StatusMessage" />
+<div>
+    <form id="profile-form" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+        <div class="group-form">
+            <label asp-for="Username"></label>
+            <input asp-for="Username" class="input max" placeholder="." disabled />
+        </div>
+        <div class="group-form">
+            <label asp-for="Input.FirstName"></label>
+            <input asp-for="Input.FirstName" class="input max" placeholder="Inserte su nombre" />
+        </div>
+        <div class="group-form">
+            <label asp-for="Input.LastName"></label>
+            <input asp-for="Input.LastName" class="input max" placeholder="Inserte su apellido" />
+        </div>
+        <div class="group-form">
+            <label asp-for="Input.PhoneNumber"></label>
+            <input asp-for="Input.PhoneNumber" class="input max" placeholder="Inserte su número de telefono" />
+            <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+        </div>
+        <button id="update-profile-button" type="submit" class="btn btn-primary">Guardar datos</button>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,100 @@
+@using Microsoft.AspNetCore.Identity
+@model Tecnostore.com.ViewModel.ViewProductViewModel
+@inject SignInManager<Usuario> SignInManager
+@inject UserManager<Usuario> UserManager
+@{
+    ViewData["Title"] = @Model.Producto.Titulo;
+}
+<form asp-controller="Home" asp-action="ViewProducto" method="post">
+    <div class="view-product-section">
+        <div class="view-product-imganes">
+            <div class="section-main-img">
+                @foreach(var item in Model.Producto.Galerias){
+                    <img src="~/img/productos/@Model.Producto.Id/@item.Imagen" class="show-imagen">
+                }
+            </div>
+            <div class="slide-imagenes">
+                @foreach(var item in Model.Producto.Galerias){
+                    <img src="~/img/productos/@Model.Producto.Id/@item.Imagen" class="btn-imagen">
+                }
+            </div>
+        </div>
+        <div class="view-product-info">
+            <div class="view-product-header">
+                <h1>@Model.Producto.Titulo</h1>
+                <p class="id-producto">ID: @Model.Producto.Id</p>
+                <div class="opinion-media-view">
+                    @if(Model.Producto.OpinionMedia == null || Model.Producto.OpinionMedia == 0){
+                        <p class="opinion-media">
+                        @for(int i = 0; i < 5; i++){
+                            <ion-icon name="star-outline"></ion-icon>
+                        }
+                        0.0 (0 Reviews)</p>
+                    }
+                    else{
+                        <p class="opinion-media">
+                            @for(int i = 0; i < Model.Producto.OpinionMedia; i++){
+                                <ion-icon name="star"></ion-icon>
+                            }
+                            @Model.Producto.OpinionMedia (0 Reviews)
+                        </p>
+                    }
+                </div>
+                <div class="view-product-subheader">
+                    <p class="tag tag-danger">@Model.Producto.Categoria.Nombre</p>
+                    <p class="link">Marca: <span class="marca">@Model.Producto.Marca</span></p>
+                </div>
+            </div>
+            <p class="precio-view-product">Precio: <span class="precio">@Model.Producto.Precio?.ToString("C")</span></p>
+            <p class="color-view-product">Color: <input type="color" value="@Model.Producto.Color" disabled></p>
+            <label for="">Cantidad</label>
+            <select asp-for="Articulo.Cantidad">
+                @for(int i = 1; i < 100; i++){
+                    <option value="@i">@i</option>
+                }
+            </select>
+            <h3>Lo que tienes que saber de este producto</h3>
+            @if(Model.Producto.DescBreve == null){
+                <p class="desc-breve">No hay descripción breve para este producto.</p>
+            }
+            else{
+                <p>@Model.Producto.DescBreve</p>
+            }
+            <div class="actions-producto">
+                <input asp-for="Producto.Id" type="hidden" value="@Model.Producto.Id">
+                <input asp-for="Producto.Titulo" type="hidden" value="@Model.Producto.Titulo">
+                <input asp-for="Producto.Precio" type="hidden" value="@Model.Producto.Precio">
+                <input asp-for="Articulo.Imagen" type="hidden" value="@Model.Producto.Galerias.First().Imagen">
+                <button type="submit" class="btn btn-primary max">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="icon">
+                <path d="M1 1.75A.75.75 0 011.75 1h1.628a1.75 1.75 0 011.734 1.51L5.18 3a65.25 65.25 0 0113.36 1.412.75.75 0 01.58.875 48.645 48.645 0 01-1.618 6.2.75.75 0 01-.712.513H6a2.503 2.503 0 00-2.292 1.5H17.25a.75.75 0 010 1.5H2.76a.75.75 0 01-.748-.807 4.002 4.002 0 012.716-3.486L3.626 2.716a.25.25 0 00-.248-.216H1.75A.75.75 0 011 1.75zM6 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15.5 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                </svg>
+                Agregar al carrito</button>
+                @if(SignInManager.IsSignedIn(User)){
+                    <a asp-action="AddWishList" asp-controller="WishList" asp-route-id="@Model.Producto.Id" class="add-fav"><ion-icon name="heart"></ion-icon></a>
+                }
+                else{
+                    <a asp-area="Identity" asp-page="/Account/Login" class="add-fav"><ion-icon name="heart"></ion-icon></a>
+                }
+            </div>
+            <div class="view-product-detalles">
+                <div class="section-description">
+                    <div class="btn-collapse">
+                        <p class="max">Descripción <ion-icon name="add-outline"></ion-icon></p>
+                    </div>
+                    <div class="collapse collapse-hidden">
+                        <p>@Model.Producto.Descripcion</p>
+                    </div>
+                </div>
+                <div class="section-description">
+                    <div class="btn-collapse">
+                        <p class="max">Características <ion-icon name="add-outline"></ion-icon></p>
+                    </div>
+                    <div class="collapse collapse-hidden">
+                        <p>@Model.Producto.Caracteristicas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

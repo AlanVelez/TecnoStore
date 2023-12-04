@@ -1,0 +1,15 @@
+@using Tecnostore.com.Models.Admin;
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Dashboard";
+    ViewData["ActivePage"] = LayoutAdmin.Index;
+}
+<div class="">
+    <div class="welcome-area-admin">
+        <div class="title">
+            <h2>&#x1F44B ¡Bienvenido Admin!</h2>
+            <p>TecnoStore, construye tu sueño digital un componente a la vez.</p>
+        </div>
+        <a class="btn btn-dark" asp-action="Productos">Crear producto</a>
+    </div>
+</div>

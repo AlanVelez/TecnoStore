@@ -1,0 +1,136 @@
+@using Tecnostore.com.Helpers;
+@model Tecnostore.com.Helpers.PagedList<Tecnostore.com.Models.Producto>
+
+@{
+    if (Model != null && Model.TotalItems > 0)
+    {
+        if (string.IsNullOrEmpty(ViewContext.HttpContext.Request.Query["searchFiltro"]))
+        {
+            ViewData["Title"] = Model.Items.First().Categoria.Nombre;
+        }
+        else
+        {
+            ViewData["Title"] = "Productos encontrados";
+        }
+    }
+    else
+    {
+        ViewData["Title"] = "No hay productos registrados.";
+    }
+}
+<div class="container-section">
+<div class="filter-categorie">
+    <h2>@ViewData["Title"]</h2>
+    <div class="section-description">
+        <div class="btn-collapse">
+            <p class="max">Filtrar<ion-icon name="add-outline"></ion-icon></p>
+        </div>
+        <div class="collapse collapse-hidden">
+            <form asp-controller="Home" asp-action="ViewCategoria" asp-route-id="@ViewContext.RouteData.Values["id"]" method="get">
+                <div class="group-form">
+                    <label>Filtrar por precio</label>
+                    <div class="group-form-row">
+                        <input type="text" name="precioMinFiltro" value="Mín." class="input" placeholder="Mín."/>
+                        <input type="text" name="precioMaxFiltro" value="Max." class="input" placeholder="Max."/>
+                    </div>
+                </div>
+                <div class="group-form">
+                    <label for="marcaFiltro">Por marca</label>
+                    <select name="marcaFiltro" class="input">
+                        @if(ViewBag.Marcas != null){
+                            <option value="">Todas las marcas</option>
+                            @foreach (var marca in ViewBag.Marcas)
+                            {
+                                <option value="@marca">@marca</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary max">Filtrar</button>
+            </form>
+        </div>
+    </div>
+    <form asp-controller="Home" asp-action="ViewCategoria" asp-route-id="@ViewContext.RouteData.Values["id"]" method="get">
+        <div class="group-form">
+            <label>Filtrar por precio</label>
+            <div class="group-form-row">
+                <input type="text" name="precioMinFiltro" value="Mín." class="input" placeholder="Mín."/>
+                <input type="text" name="precioMaxFiltro" value="Max." class="input" placeholder="Max."/>
+            </div>
+        </div>
+        <div class="group-form">
+            <label for="marcaFiltro">Por marca</label>
+            <select name="marcaFiltro" class="input">
+                @if(ViewBag.Marcas != null){
+                    <option value="">Todas las marcas</option>
+                    @foreach (var marca in ViewBag.Marcas)
+                    {
+                        <option value="@marca">@marca</option>
+                    }
+                }
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary max">Filtrar</button>
+    </form>
+</div>
+<div class="product-section">
+    @if(Model.TotalItems > 0){
+        @foreach(var item in Model.Items){
+            <div class="product">
+                <div class="image-categorie">
+                    <img src="~/img/productos/@item.Id/@item.Galerias.First().Imagen" alt="">
+                </div>
+                <div class="info-product">
+                    <h1>@item.Categoria.Nombre</h1>
+                    <a asp-action="ViewProducto" asp-controller="Home" asp-route-id="@item.Id" class="link">@item.Titulo</a>
+                </div>
+                <div class="button-product max">
+                    <p class="precio">@item.Precio?.ToString("C")</p>
+                    <a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.Id" class="btn btn-primary">Agregar</a>
+                </div>
+            </div>
+        }
+        <div class="pagination max" style="padding:2rem">
+            @if (Model.HasAnterior)
+            {
+                <a href="?pagina=@(Model.NumeroPagina - 1)&tamanoPagina=@Model.TamanoPagina" class="btn btn-secondary">Anterior</a>
+            }
+            else{
+                <a class="btn btn-secondary" disabled>Anterior</a>
+            }
+            @*Página @Model.NumeroPagina de @Model.TotalPaginas*@
+            <p>Mostrando @Model.PrimerElementoEnPagina de @Model.TotalItems</p>
+            @if (Model.HasSiguiente)
+            {
+                <a href="?pagina=@(Model.NumeroPagina + 1)&tamanoPagina=@Model.TamanoPagina" class="btn btn-secondary">Siguiente</a>
+            }
+            else{
+                <a class="btn btn-secondary" disabled>Siguiente</a>
+            }
+        </div> 
+        <div class="pagination max" style="padding:2rem">
+            @if (Model.HasAnterior)
+            {
+                <a href="?pagina=@(Model.NumeroPagina - 1)&tamanoPagina=@Model.TamanoPagina" class="btn btn-secondary">Anterior</a>
+            }
+            else{
+                <a class="btn btn-secondary" disabled>Anterior</a>
+            }
+            @*Página @Model.NumeroPagina de @Model.TotalPaginas*@
+            <p>Mostrando @Model.PrimerElementoEnPagina de @Model.TotalItems</p>
+            @if (Model.HasSiguiente)
+            {
+                <a href="?pagina=@(Model.NumeroPagina + 1)&tamanoPagina=@Model.TamanoPagina" class="btn btn-secondary">Siguiente</a>
+            }
+            else{
+                <a class="btn btn-secondary" disabled>Siguiente</a>
+            }
+        </div>
+    }else{
+        <div class="alert alert-danger" role="alert">
+            <p>No hay productos registrados.</p>
+            <a asp-action="Index" asp-controller="Home" class="link">Regresar al inicio</a>
+        </div>
+    }
+</div>
+</div>

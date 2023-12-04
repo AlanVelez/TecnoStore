@@ -1,0 +1,55 @@
+@using Microsoft.AspNetCore.Identity
+@using Tecnostore.com.Models;
+@inject SignInManager<Usuario> SignInManager
+@inject UserManager<Usuario> UserManager
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - Tecnostore.com</title>
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/normalize.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/Tecnostore.com.styles.css" asp-append-version="true" />
+    </head>
+    <body>
+        @RenderBody()
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+    <footer>
+        <div class="footer-section">
+            <div class="column-footer logo-section">
+                <p class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clip-rule="evenodd" />
+                </svg>TecnoStore</p>
+            </div>   
+            <div class="column-footer">
+                <h3>TecnoStore</h3>
+                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </div>   
+            <div class="column-footer">
+                <h3>Atención al cliente</h3>
+                <a><ion-icon name="chatbubbles-outline"></ion-icon>Servicio al cliente</a>
+            </div>   
+            <div class="column-footer">
+                <h3>Contáctenos</h3>
+                <a><ion-icon name="logo-facebook"></ion-icon>Facebook</a>
+                <a><ion-icon name="logo-twitter"></ion-icon>Twitter</a>
+                <a><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
+            </div>   
+        </div>
+        <div class="footer-section">
+            <div class="column-footer">
+                <p>© @DateTime.Now.Year Tecnostore.com</p>
+            </div>   
+            <div class="column-footer">
+                <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de privacidad</a>
+            </div>   
+            <div class="column-footer">
+                <a asp-area="" asp-controller="Home" asp-action="Terminos">Términos y condiciones</a>
+            </div>
+        </div>
+    </footer>
+</html>
